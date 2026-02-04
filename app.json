@@ -1,0 +1,178 @@
+{
+  "pages": [
+    "pages/home/home_new",
+    "pages/course-list/index",
+    "pages/discover/index",
+    "pages/usercenter/index",
+    "pages/customer-service/index",
+    "pages/user/agreement/index",
+    "pages/user/privacy/index"
+  ],
+  "subpackages": [
+    {
+      "root": "subpackages/courses",
+      "name": "courses",
+      "pages": [
+        "pages/detail/index",
+        "pages/group/index",
+        "pages/publish/index",
+        "pages/map-picker/index"
+      ]
+    },
+    {
+      "root": "subpackages/user",
+      "name": "user",
+      "pages": [
+        "pages/profile/index",
+        "pages/person-info/index",
+        "pages/student-info/index",
+        "pages/child-info/index",
+        "pages/teacher-apply/index",
+        "pages/teacher-profile/index",
+        "pages/teachers-list/index",
+        "pages/points/index",
+        "pages/favorites/index",
+        "pages/messages/index",
+        "pages/learning-records/index",
+        "pages/settings/index",
+        "pages/help/index",
+        "pages/contact-service/index",
+        "pages/address/list/index",
+        "pages/address/edit/index",
+        "pages/name-edit/index",
+        "pages/groups/index",
+        "pages/my-courses/index",
+        "pages/about/index"
+      ]
+    },
+    {
+      "root": "subpackages/order",
+      "name": "order",
+      "pages": [
+        "pages/list/index",
+        "pages/detail/index",
+        "pages/pay/index",
+        "pages/pay-result/index",
+        "pages/evaluate/index",
+        "pages/evaluation-detail/index",
+        "pages/cancel-reason/index"
+      ]
+    },
+    {
+      "root": "subpackages/auth",
+      "name": "auth",
+      "pages": [
+        "login/index",
+        "register/index"
+      ]
+    },
+    {
+      "root": "subpackages/payment",
+      "name": "payment",
+      "pages": [
+        "detail/index",
+        "success/index"
+      ]
+    },
+    {
+      "root": "subpackages/group",
+      "name": "group",
+      "pages": [
+        "pages/detail/index"
+      ]
+    },
+    {
+      "root": "subpackages/components",
+      "name": "components",
+      "pages": []
+    },
+    {
+      "root": "subpackages/tdesign",
+      "name": "tdesign",
+      "pages": []
+    },
+    {
+      "root": "subpackages/teachers",
+      "name": "teachers",
+      "pages": [
+        "pages/list/index"
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/home/home_new": {
+      "network": "all",
+      "packages": [
+        "user"
+      ]
+    },
+    "pages/course-list/index": {
+      "network": "wifi",
+      "packages": [
+        "courses",
+        "group"
+      ]
+    },
+    "pages/discover/index": {
+      "network": "wifi",
+      "packages": [
+        "courses"
+      ]
+    },
+    "pages/usercenter/index": {
+      "network": "all",
+      "packages": [
+        "user",
+        "order"
+      ]
+    }
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#999999",
+    "selectedColor": "#8B5CF6",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/home_new",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/course-list/index",
+        "text": "拼团"
+      },
+      {
+        "pagePath": "pages/discover/index",
+        "text": "活动"
+      },
+      {
+        "pagePath": "pages/usercenter/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "亲子活动拼团",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f6f6f6",
+    "enablePullDownRefresh": true
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "requiredPrivateInfos": [
+    "chooseAddress",
+    "chooseLocation"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "用于推荐附近的亲子活动和计算距离"
+    }
+  },
+  "requiredBackgroundModes": [],
+  "useExtendedLib": {
+    "weui": true
+  },
+  "sitemapLocation": "sitemap.json"
+}

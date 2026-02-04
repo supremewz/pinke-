@@ -1,0 +1,164 @@
+# ==================== 系统文件 ====================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ==================== 微信小程序 ====================
+# 微信开发者工具配置
+.wechatide.ib.json
+project.private.config.json
+
+# 微信开发者工具临时文件和缓存
+*.wess
+*.subpackage
+*.iijson
+.wechatide/
+
+# 小程序依赖
+miniprogram_npm/
+
+# ==================== Node.js ====================
+# 依赖目录
+node_modules/
+jspm_packages/
+
+# 日志文件
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 缓存目录
+.npm
+.yarn
+.pnpm
+.eslintcache
+
+# REPL历史
+.node_repl_history
+
+# 包文件
+*.tgz
+
+# Yarn完整性文件
+.yarn-integrity
+
+# ==================== 环境变量和配置 ====================
+# 环境变量文件
+.env
+.env.local
+.env.*.local
+
+# 敏感配置文件（包含密钥、密码等）
+backend/config/development.yaml
+backend/config/production.yaml
+backend/config/*.local.yaml
+
+# 微信小程序配置（包含AppID）
+project.config.json
+project.private.config.json
+
+# ==================== IDE 和编辑器 ====================
+# VSCode
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Cursor
+.cursor/
+
+# Claude
+.claude/
+
+# Trae
+.trae/
+
+# Kiro
+.kiro/
+
+# Codebuddy
+.codebuddy/
+
+# ==================== Go 后端 ====================
+# Go 编译输出
+backend/main
+backend/*.exe
+backend/*.exe~
+backend/*.dll
+backend/*.so
+backend/*.dylib
+
+# Go 测试文件
+backend/*.test
+backend/*.out
+
+# Go 依赖
+backend/vendor/
+
+# Go 工作区
+backend/go.work
+backend/go.work.sum
+
+# 日志文件
+backend/logs/
+backend/*.log
+
+# 上传文件
+backend/uploads/
+
+# 证书文件（敏感）
+backend/certs/
+
+# 数据库文件
+backend/*.db
+backend/*.sqlite
+backend/*.sqlite3
+backend/*.sql
+
+
+# ==================== 构建输出 ====================
+dist/
+build/
+out/
+
+# ==================== 测试和覆盖率 ====================
+coverage/
+*.cover
+*.coverage
+
+# ==================== 临时文件 ====================
+*.tmp
+*.temp
+*.bak
+*.backup
+utils/temp/
+utils/*.zip
+
+# ==================== 部署相关 ====================
+# Vercel
+.vercel
+
+# ==================== 其他 ====================
+# 备份文件
+*.orig
+
+# 压缩文件
+*.zip
+*.tar.gz
+*.rar
